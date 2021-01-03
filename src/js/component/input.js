@@ -5,11 +5,7 @@ export function Input() {
 	const [todo, setTodo] = useState([]);
 
 	const handlerEnterKey = event => {
-		if (
-			event.key == "Enter" &&
-			task != "" &&
-			task != setTodo([...todo, task])
-		) {
+		if (event.key == "Enter" && task != "") {
 			setTodo([...todo, task]);
 			setTask("");
 		}
@@ -19,17 +15,19 @@ export function Input() {
 		setTodo(newList);
 	};
 	return (
-		<>
+		<React.Fragment>
 			<input
+				size="22"
 				value={task}
 				onChange={() => setTask(event.target.value)}
 				onKeyPress={() => handlerEnterKey(event)}
 			/>
 			{todo.map((element, index) => {
 				return (
-					<div key={index}>
-						{element}{" "}
+					<div key={index} className="d-flex justify-content-between">
+						{element}
 						<button
+							className="btn btn-outline-danger btn-sm"
 							type="button"
 							onClick={() => cancelElementHandler(element)}>
 							x
@@ -38,6 +36,6 @@ export function Input() {
 				);
 			})}
 			<h5>You have {todo.length} tasks to do!</h5>
-		</>
+		</React.Fragment>
 	);
 }

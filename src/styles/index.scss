@@ -11,3 +11,29 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    background-color: black;
+}
+.box1{
+    width: 15rem;
+}
+
+.toCenter{
+    padding-left: 2rem;
+}
+.d-flex{
+    background-color: ivory;
+    padding-left: 0.5rem;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+}
+.mx-auto{
+    background-color: lightblue;
+    margin-top: 10rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius:0.5rem;
+    padding-bottom: 0.75rem;
+}
+

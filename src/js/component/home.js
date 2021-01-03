@@ -8,10 +8,8 @@ import { Input } from "./input.js";
 export function Home() {
 	return (
 		<React.Fragment>
-			<div className="container">
-				<h1>TODOS!</h1>
-				<Input />
-			</div>
+			<h1 className="toCenter">TODOS!</h1>
+			<Input />
 		</React.Fragment>
 	);
 }
