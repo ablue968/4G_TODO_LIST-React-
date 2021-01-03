@@ -19,6 +19,7 @@ export function Input() {
 			<input
 				size="22"
 				value={task}
+				placeholder="What needs to be done?"
 				onChange={() => setTask(event.target.value)}
 				onKeyPress={() => handlerEnterKey(event)}
 			/>
