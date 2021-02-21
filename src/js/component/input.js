@@ -17,6 +17,7 @@ export function Input() {
 	return (
 		<React.Fragment>
 			<input
+				className="col-12"
 				size="22"
 				value={task}
 				placeholder="What needs to be done?"
@@ -28,11 +29,9 @@ export function Input() {
 					<div key={index} className="d-flex justify-content-between">
 						{element}
 						<button
-							className="btn btn-outline-danger btn-sm"
 							type="button"
-							onClick={() => cancelElementHandler(element)}>
-							x
-						</button>
+							onClick={() => cancelElementHandler(element)}
+						/>
 					</div>
 				);
 			})}

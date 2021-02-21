@@ -20,6 +20,7 @@ body{
 
 .toCenter{
     padding-left: 2rem;
+    font-family: 'Pacifico', cursive;
 }
 .d-flex{
     background-color: ivory;
@@ -37,3 +38,10 @@ body{
     padding-bottom: 0.75rem;
 }
 
+button{
+    border-radius: 100%;
+    width: 1.5rem;
+    border-width: 0.25rem;
+    border-color: red;
+    background-color: transparent;
+}
