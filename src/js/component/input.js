@@ -15,32 +15,6 @@ export function Input() {
 		setTodo(newList);
 	};
 
-	const postTask = () => {
-		const endpoint =
-			"https://assets.breatheco.de/apis/fake/todos/user/ablue968";
-		const config = {
-			method: "POST",
-			body: {
-				label: task,
-				done: "false"
-			}
-		};
-		fetch(endpoint, config)
-			.then(response => response.json())
-			.then(data => console.log(data));
-	};
-
-	useEffect(() => {
-		const endpoint =
-			"https://assets.breatheco.de/apis/fake/todos/user/ablue968";
-		const config = {
-			method: "GET"
-		};
-		fetch(endpoint, config)
-			.then(response => response.json())
-			.then(data => console.log(data));
-	}, []);
-
 	return (
 		<React.Fragment>
 			<input
